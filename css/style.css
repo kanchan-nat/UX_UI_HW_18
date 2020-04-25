@@ -10,17 +10,6 @@
     width: 500px;
 }
 
-.verticalhorizontal {
-    display: block;
-    height: 300px;
-    text-align: center;
-    width: 100%;
-    vertical-align: middle;
-    top: 0;
-    position: fixed;
-    z-index: -100;
-}
-
 .Logo-Img {
     display: block;
     /* height: 700px; */
@@ -70,7 +59,7 @@ section{
     font: normal 25px Sans-Serif;
     color: #504720;
     text-align: center;
-    padding-right: 80px;
+    padding-right: 150px;
     
 }
 
@@ -87,19 +76,21 @@ section{
     font: normal 20px Sans-Serif;
     color: #504720;
     text-align: center;
+    padding-right: 45px;
 }
 
-/* Clearfix (clear floats) */
-.fs-row::after {
-  content: "";
-  clear: both;
-  display: table;
+.fs-column figure{
+        width:185px;
+        height:280px;
+        align-items: center;
+        position:relative;
+      
 }
+
 
 .ss-column {
   float: left;
    width: 25%;
-   padding-right: 32px;
    padding-left: 20px;
 }
 
@@ -128,14 +119,14 @@ section{
   display: table;
 }
 
-#third-section h1{
+.about-me h1{
     margin-top: 100px;
     font: normal 25px Sans-Serif;
     color: #504720;
 
 }
 
-#third-section p{
+.about-me p{
     font: normal 18px Sans-Serif;
     color: #504720;
     margin-top: 50px;
@@ -144,44 +135,44 @@ section{
     padding-left: 20px;
 }
 
-#my-photo-id {
+.my-photo-id {
     padding-left: 20px;
     float: right;
     margin-right: 125px;
     height: 338px;
 }
 
-#my-skills {
+.my-skills {
     margin-top: 150px;
     width: 78%;
 }
 
-#my-skills h1{
+.my-skills h1{
     font: normal 25px Sans-Serif;
     color: #504720;
     margin-bottom: 30px;
 
 }
 
-#my-skills p{
+.my-skills p{
     font: normal 20px Sans-Serif;
     color: #504720;
     padding-left: 30px;
     /*word-spacing: 30px;*/
 }
 
-#my-skills br{
+.my-skills br{
     line-height: 150%;
 }
 
 
-#my-resume h1{
+.my-resume h1{
     font: normal 25px Sans-Serif;
     color: #504720;
     margin-top: 200px;
 }
 
-#my-resume object{
+.my-resume object{
     position: relative;
     left: 75px;
     width: 75%;
@@ -190,7 +181,7 @@ section{
     margin-top: 30px;
 }
 
-#my-resume object:focus {
+.my-resume object:focus {
     outline: none;
 }
 
@@ -271,5 +262,132 @@ figcaption{
     padding-left: 16px;
     margin-right: 29px;
     margin-top: 10px;    
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .oneLiner {
+        margin-top: 10px;
+        float: left;
+        height: 10px;
+        padding-left: 125px;
+        width:70%;
+    }
+
+    main {
+        margin-top: 75px;
+        position: relative;
+        width: 80%;
+        padding-left: 125px;
+    }
+
+    .fs-column {
+         float: left;
+         width: 15%;
+         padding-right: 25px;
+         padding-left: 10px;
+      }
+      .section-header {
+        margin-bottom: 50px;
+        font: normal 25px Sans-Serif;
+        color: #504720;
+        text-align: center;
+        padding-right: 15px;
+       
+    }
+    .fs-column h4{
+        font: normal 15px Sans-Serif;
+        color: #504720;
+        text-align: center;
+        padding-right: 25px;
+       
+    }
+    .fs-column figure{
+        width:75px;
+        height:100px;
+        align-items: center;
+        position:relative;
+     
+}
+  figure{
+    border: white;
+    background-color: white;
+    width:95px;
+    align-items: center;
+    position:relative;
+}
+   
+figcaption{
+    position: relative;
+    /* left: 375px; */
+    height: 30px;
+    font-size: 24px;
+    color: #504720;
+    width: 50px;
+    background-color: #707070;
+    border-radius: 12px;
+    border-width: 0px;
+    /* margin-bottom: 35px; */
+    text-align: center;
+    padding-right: 22px;
+    padding-left: 16px;
+    margin-right: 29px;
+    margin-top: 10px;    
+
+}
+    .about-me h1{
+    font: normal 25px Sans-Serif;
+    color: #504720;
+
+}
+    .about-me p{
+    font: normal 18px Sans-Serif;
+    color: #504720;
+    margin-top: 50px;
+    width: 78%;
+    line-height:1.6;
+    padding-left: 20px;
+}
+
+.my-photo-id {
+    padding-left: 20px;
+    float: right;
+    margin-right: 125px;
+    height: 200px;
+}
+
+.my-skills {
+    margin-top: 150px;
+    width: 78%;
+}
+    .footer{
+    width: 55%;
+    padding-left: 10px;
+}
+.shape {
+    position: relative;
+    left: 200px;
+    height: 64px;
+    width: 105px;
+    background-color: #504720;
+    color: #F8E283;
+    font-size: 20px;
+    border-radius: 12px;
+    border-width: 0px;
+    margin-bottom: 15px;
+    padding-right: 13px;
+    padding-left: 10px;
+    margin-right: 19px;
+    margin-top:15px;
+}
+
+.mainfooter{
+    height: 300px;
+    width: 100%;
+    background: #FED121;
+    margin-bottom: 0px;
+   
+}
 
 }
